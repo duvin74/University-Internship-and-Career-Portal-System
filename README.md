@@ -1,3 +1,3 @@
 # University-Internship-and-Career-Portal-System
 University Internship and Career Portal System
-Our team project
+Our team project update
