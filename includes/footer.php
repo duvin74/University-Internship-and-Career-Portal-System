@@ -1,8 +1,15 @@
+
 </main>
 
-<footer>
-    <p>&copy; 2026 University Internship and Career Portal.</p>
-    <p>All Rights Reserved.</p>
+<footer class="main-footer">
+
+    <p>🎓 University Internship and Career Portal</p>
+
+    <p>
+        &copy; 2026 University Internship and Career Portal.
+        All Rights Reserved.
+    </p>
+
 </footer>
 
 </body>
