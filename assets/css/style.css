@@ -1,0 +1,174 @@
+
+/* =================================
+   CAREERCONNECT - COMMON CSS
+   Theme: Navy Blue, White and Gold
+================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f7fb;
+    color: #263238;
+    line-height: 1.6;
+}
+
+/* MAIN CONTENT */
+
+.main-content {
+    min-height: 70vh;
+}
+
+/* HEADER AND NAVIGATION */
+
+.main-header {
+    background: #142d4e;
+    width: 100%;
+    position: relative;
+    z-index: 100;
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: auto;
+    padding: 18px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.logo {
+    color: #ffffff;
+    font-size: 27px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.logo span {
+    color: #d5aa45;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    flex-wrap: wrap;
+}
+
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #d5aa45;
+}
+
+/* COMMON BUTTON */
+
+.btn {
+    display: inline-block;
+    padding: 11px 22px;
+    background: #142d4e;
+    color: #ffffff;
+    text-decoration: none;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #c49a35;
+    color: #ffffff;
+}
+
+/* COMMON HEADINGS */
+
+.section-title {
+    color: #142d4e;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/* FOOTER */
+
+.main-footer {
+    background: #142d4e;
+    color: #ffffff;
+    padding: 22px 25px 10px;
+    margin-top: 0;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.footer-about,
+.footer-links {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-about h2 {
+    color: #d5aa45;
+    margin-bottom: 8px;
+}
+
+.footer-links h3 {
+    margin-bottom: 8px;
+}
+
+.footer-links a {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+.footer-links a:hover {
+    color: #d5aa45;
+}
+
+.footer-bottom {
+    max-width: 1200px;
+    margin: 15px auto 0;
+    padding-top: 10px;
+    border-top: 1px solid #52647b;
+    text-align: center;
+    font-size: 13px;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        justify-content: center;
+        gap: 14px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
