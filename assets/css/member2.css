@@ -1,0 +1,364 @@
+/* =========================================
+   CAREERCONNECT - MEMBER 2
+   STUDENT REGISTRATION AND LOGIN
+   Navy Blue, White and Gold
+========================================= */
+
+
+/* HERO SECTION */
+
+.m2-hero {
+    min-height: 450px;
+    padding: 60px 7%;
+    background: linear-gradient(120deg, #102744, #1d426b);
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    align-items: center;
+    gap: 40px;
+}
+
+.m2-hero-content {
+    color: white;
+}
+
+.m2-label,
+.m2-section-heading > span {
+    color: #bd9230;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.m2-hero h1 {
+    font-size: clamp(36px, 5vw, 55px);
+    line-height: 1.2;
+    margin: 18px 0;
+}
+
+.m2-hero h1 span {
+    color: #e5bd63;
+    display: block;
+}
+
+.m2-hero-content p {
+    color: #e1e8f0;
+    max-width: 550px;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+.m2-hero-image img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+}
+
+
+/* BUTTONS */
+
+.m2-btn {
+    display: inline-block;
+    padding: 12px 22px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 5px 5px 5px 0;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 14px;
+}
+
+.m2-btn-gold {
+    background: #d5aa45;
+    color: #142d4e;
+}
+
+.m2-btn-gold:hover {
+    background: white;
+    color: #142d4e;
+}
+
+.m2-btn-outline {
+    border-color: white;
+    color: white;
+}
+
+.m2-btn-outline:hover {
+    background: white;
+    color: #142d4e;
+}
+
+.m2-btn-dark {
+    background: #142d4e;
+    color: white;
+}
+
+.m2-btn-dark:hover {
+    background: #d5aa45;
+    color: #142d4e;
+}
+
+.m2-btn-outline-dark {
+    border-color: #142d4e;
+    color: #142d4e;
+}
+
+.m2-btn-outline-dark:hover {
+    background: #142d4e;
+    color: white;
+}
+
+
+/* SECTION HEADINGS */
+
+.m2-section-heading {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.m2-section-heading h2 {
+    color: #142d4e;
+    font-size: 30px;
+    margin: 10px 0;
+}
+
+.m2-section-heading p {
+    color: #718096;
+}
+
+
+/* DASHBOARD AND INFORMATION */
+
+.m2-dashboard,
+.m2-info-section {
+    padding: 40px 7%;
+    background: #edf5f3;
+}
+
+.m2-dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.m2-dashboard-card {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid #e2ebe8;
+    box-shadow: 0 5px 18px rgba(20,45,78,0.06);
+    transition: 0.3s;
+}
+
+.m2-dashboard-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(20,45,78,0.12);
+}
+
+.m2-card-icon {
+    width: 45px;
+    height: 45px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    background: #f8efd9;
+    color: #a87d20;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.m2-dashboard-card h3 {
+    color: #142d4e;
+    margin-bottom: 10px;
+}
+
+.m2-dashboard-card p {
+    color: #687587;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.m2-dashboard-card a {
+    color: #ad8128;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+/* FORM SECTION */
+
+.m2-form-section,
+.m2-profile-section {
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #e8f7f3, #eaf2fa);
+}
+
+.m2-form-card,
+.m2-profile-card {
+    max-width: 650px;
+    margin: auto;
+    padding: 35px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 28px rgba(20,45,78,0.09);
+}
+
+.m2-form-card form label {
+    display: block;
+    color: #142d4e;
+    font-weight: bold;
+    font-size: 14px;
+    margin: 15px 0 7px;
+}
+
+.m2-form-card input,
+.m2-form-card textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #d8e0e8;
+    border-radius: 6px;
+    font-size: 14px;
+    font-family: inherit;
+    outline: none;
+    background: #fbfcfd;
+}
+
+.m2-form-card input:focus,
+.m2-form-card textarea:focus {
+    border-color: #bd9230;
+    box-shadow: 0 0 0 3px rgba(189,146,48,0.12);
+}
+
+.m2-form-card textarea {
+    resize: vertical;
+}
+
+.m2-submit {
+    width: 100%;
+    margin-top: 22px;
+}
+
+.m2-form-bottom {
+    text-align: center;
+    color: #687587;
+    margin-top: 22px;
+    font-size: 14px;
+}
+
+.m2-form-bottom a {
+    color: #ad8128;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+/* MESSAGES */
+
+.m2-message {
+    padding: 12px 15px;
+    border-radius: 6px;
+    margin-bottom: 18px;
+    font-size: 14px;
+}
+
+.m2-error {
+    background: #fff0f0;
+    color: #a32626;
+    border: 1px solid #f1cccc;
+}
+
+.m2-success {
+    background: #eaf8ef;
+    color: #247044;
+    border: 1px solid #c8e8d2;
+}
+
+.m2-success a {
+    color: #247044;
+    font-weight: bold;
+}
+
+
+/* PROFILE */
+
+.m2-profile-details {
+    display: grid;
+    gap: 0;
+    margin: 20px 0;
+}
+
+.m2-profile-item {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    gap: 15px;
+    padding: 15px 10px;
+    border-bottom: 1px solid #e8edf2;
+}
+
+.m2-profile-item span {
+    color: #718096;
+    font-size: 14px;
+}
+
+.m2-profile-item strong {
+    color: #142d4e;
+    font-size: 14px;
+    overflow-wrap: anywhere;
+}
+
+.m2-profile-actions {
+    margin-top: 25px;
+    text-align: center;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+
+    .m2-hero {
+        grid-template-columns: 1fr;
+        padding: 45px 6%;
+    }
+
+    .m2-hero-image img {
+        height: 280px;
+    }
+
+    .m2-dashboard-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 600px) {
+
+    .m2-hero {
+        padding: 35px 6%;
+    }
+
+    .m2-hero h1 {
+        font-size: 36px;
+    }
+
+    .m2-dashboard-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .m2-form-card,
+    .m2-profile-card {
+        padding: 22px;
+    }
+
+    .m2-section-heading h2 {
+        font-size: 25px;
+    }
+
+    .m2-profile-item {
+        grid-template-columns: 1fr;
+        gap: 5px;
+    }
+}
