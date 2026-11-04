@@ -1,27 +1,21 @@
 <?php
 
 $host = "localhost";
-$dbname = "university_internship_portal";
 $username = "root";
 $password = "";
+$dbname = "university_internship_portal";
 
-try {
-    $pdo = new PDO(
-        "mysql:host=$host;dbname=$dbname;charset=utf8mb4",
-        $username,
-        $password
-    );
+$conn = mysqli_connect(
+    $host,
+    $username,
+    $password,
+    $dbname
+);
 
-    $pdo->setAttribute(
-        PDO::ATTR_ERRMODE,
-        PDO::ERRMODE_EXCEPTION
-    );
-
-    echo "Database Connected Successfully!";
-
-} catch (PDOException $e) {
-
-    die("Database Connection Failed: " . $e->getMessage());
-
+if (!$conn) {
+    die("Database Connection Failed: " . mysqli_connect_error());
 }
+
+mysqli_set_charset($conn, "utf8mb4");
+
 ?>
