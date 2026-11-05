@@ -1,0 +1,351 @@
+/* MEMBER 5 - APPLICATION SECTION */
+
+.m5-container {
+    width: 90%;
+    max-width: 1150px;
+    margin: auto;
+}
+
+.m5-hero {
+    min-height: 430px;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(120deg, #071b3b, #123c70);
+    color: white;
+    padding: 70px 0;
+}
+
+.m5-hero .m5-container {
+    text-align: center;
+}
+
+.m5-tag {
+    display: inline-block;
+    color: #e6bd63;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.m5-hero h1 {
+    font-size: 42px;
+    margin-bottom: 18px;
+}
+
+.m5-hero p {
+    max-width: 650px;
+    margin: 0 auto 28px;
+    line-height: 1.8;
+    color: #e4eaf3;
+}
+
+.m5-hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.m5-btn {
+    display: inline-block;
+    background: #d8ad50;
+    color: #071b3b;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.m5-btn:hover {
+    background: #f0cb76;
+    transform: translateY(-2px);
+}
+
+.m5-outline {
+    background: transparent;
+    border: 1px solid #d8ad50;
+    color: white;
+}
+
+.m5-outline:hover {
+    background: #d8ad50;
+    color: #071b3b;
+}
+
+.m5-section {
+    padding: 55px 0;
+    background: #f3f7fb;
+    min-height: 450px;
+}
+
+.m5-section h1,
+.m5-section h2 {
+    color: #102d52;
+    margin-bottom: 15px;
+}
+
+.m5-subtitle {
+    color: #66758a;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+.m5-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-top: 30px;
+}
+
+.m5-card {
+    background: white;
+    padding: 28px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(15, 40, 70, 0.08);
+    border-bottom: 3px solid #d8ad50;
+    transition: 0.3s;
+}
+
+.m5-card:hover {
+    transform: translateY(-5px);
+}
+
+.m5-card-icon {
+    width: 45px;
+    height: 45px;
+    background: #eaf0f8;
+    color: #153b69;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-weight: bold;
+    margin-bottom: 18px;
+}
+
+.m5-card h3 {
+    color: #102d52;
+    margin-bottom: 12px;
+}
+
+.m5-card p {
+    color: #66758a;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.m5-card a,
+.m5-small-link {
+    color: #174b83;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.m5-card a:hover,
+.m5-small-link:hover {
+    color: #c08d28;
+}
+
+.m5-form-wrapper,
+.m5-details-card,
+.m5-message {
+    background: white;
+    max-width: 750px;
+    margin: 20px auto;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 5px 22px rgba(15, 40, 70, 0.08);
+}
+
+.m5-form-wrapper h2,
+.m5-details-card h2 {
+    color: #102d52;
+    margin-bottom: 15px;
+}
+
+.m5-internship-info {
+    background: #f1f5fa;
+    padding: 22px;
+    border-radius: 8px;
+    margin: 25px 0;
+    line-height: 1.8;
+}
+
+.m5-internship-info h3 {
+    color: #153b69;
+    margin-bottom: 12px;
+}
+
+.m5-form-wrapper form label {
+    display: block;
+    margin: 20px 0;
+    color: #34445a;
+    line-height: 1.6;
+}
+
+.m5-form-wrapper form button {
+    margin-top: 10px;
+}
+
+.m5-cancel-link {
+    display: inline-block;
+    margin: 15px;
+    color: #174b83;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.m5-table-wrapper {
+    overflow-x: auto;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(15, 40, 70, 0.07);
+}
+
+.m5-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 650px;
+}
+
+.m5-table th {
+    background: #102d52;
+    color: white;
+    padding: 16px;
+    text-align: left;
+}
+
+.m5-table td {
+    padding: 15px;
+    border-bottom: 1px solid #e4eaf1;
+    color: #43536a;
+}
+
+.m5-table tr:hover {
+    background: #f5f8fc;
+}
+
+.m5-status {
+    display: inline-block;
+    background: #fff2d4;
+    color: #805b13;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.m5-detail-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 15px 0;
+    border-bottom: 1px solid #e5eaf0;
+}
+
+.m5-detail-row strong {
+    color: #153b69;
+}
+
+.m5-detail-row span {
+    color: #526176;
+    text-align: right;
+}
+
+.m5-description {
+    margin: 25px 0;
+    line-height: 1.8;
+    color: #526176;
+}
+
+.m5-description h3 {
+    color: #153b69;
+    margin-bottom: 10px;
+}
+
+.m5-withdraw-btn {
+    background: #b83c3c;
+    color: white;
+    padding: 11px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.m5-withdraw-btn:hover {
+    background: #922d2d;
+}
+
+.m5-success {
+    background: #e4f5e9;
+    color: #20683a;
+    padding: 15px;
+    border-radius: 7px;
+    margin: 20px 0;
+}
+
+.m5-notice {
+    background: #fff4d9;
+    color: #755518;
+    padding: 18px;
+    border-radius: 7px;
+    margin-top: 25px;
+}
+
+.m5-notice a {
+    color: #174b83;
+    font-weight: 700;
+    margin-left: 8px;
+}
+
+.m5-message {
+    text-align: center;
+    line-height: 1.8;
+}
+
+.m5-message p {
+    color: #66758a;
+    margin-bottom: 20px;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 768px) {
+
+    .m5-hero {
+        min-height: 350px;
+        padding: 50px 0;
+    }
+
+    .m5-hero h1 {
+        font-size: 30px;
+    }
+
+    .m5-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .m5-section {
+        padding: 35px 0;
+    }
+
+    .m5-form-wrapper,
+    .m5-details-card,
+    .m5-message {
+        padding: 22px;
+    }
+
+    .m5-detail-row {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .m5-detail-row span {
+        text-align: left;
+    }
+}
