@@ -1,11 +1,12 @@
-/*=========================================   
-   CAREERCONNECT - MEMBER 1 HOME PAGE
-   Navy Blue, White, Gold + Mint Body Theme
-========================================= */
+
+/*=========================================
+   CAREERCONNECT - MEMBER 1
+   Navy Blue, White, Gold + Mint Theme
+=========================================*/
 
 
 /* =========================================
-   HERO SECTION - ORIGINAL DESIGN
+   HERO SECTION
 ========================================= */
 
 .m1-hero {
@@ -120,7 +121,7 @@
 
 
 /* =========================================
-   BODY - INTRO SECTION
+   INTRO SECTION
 ========================================= */
 
 .m1-intro-section {
@@ -143,11 +144,11 @@
 
 
 /* =========================================
-   BODY - COMMON SECTIONS
+   COMMON SECTIONS
 ========================================= */
 
 .m1-section {
-    padding: 35px 7%;
+    padding: 45px 7%;
 }
 
 .m1-heading {
@@ -174,7 +175,7 @@
 
 
 /* =========================================
-   FEATURES SECTION - MINT GREEN
+   FEATURES SECTION
 ========================================= */
 
 .m1-features {
@@ -183,7 +184,7 @@
 
 
 /* =========================================
-   GRID AND CARDS
+   GRID AND HOME PAGE CARDS
 ========================================= */
 
 .m1-grid {
@@ -247,7 +248,7 @@
 
 
 /* =========================================
-   COMPANIES SECTION - LIGHT TEAL
+   HOME PAGE COMPANIES SECTION
 ========================================= */
 
 .m1-company-section {
@@ -269,7 +270,7 @@
 
 
 /* =========================================
-   ACHIEVEMENTS SECTION - LIGHT MINT
+   HOME PAGE ACHIEVEMENTS SECTION
 ========================================= */
 
 .m1-achievement-section {
@@ -302,7 +303,7 @@
 
 
 /* =========================================
-   ABOUT SECTION - LIGHT BLUE MINT
+   ABOUT SECTION - HOME PAGE
 ========================================= */
 
 .m1-about-section {
@@ -342,7 +343,7 @@
 
 
 /* =========================================
-   FINAL CTA - ORIGINAL NAVY BLUE
+   FINAL CTA SECTION
 ========================================= */
 
 .m1-cta {
@@ -367,6 +368,151 @@
 .m1-cta p {
     color: #dce5ef;
     margin-bottom: 25px;
+}
+
+
+/* =========================================
+   INNER PAGES - COMMON TITLE
+========================================= */
+
+.m1-title {
+    color: #142d4e;
+    font-size: 34px;
+    text-align: center;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.m1-intro {
+    color: #687587;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.7;
+    max-width: 750px;
+    margin: 0 auto 30px;
+}
+
+
+/* =========================================
+   EXPLORE COMPANIES PAGE
+========================================= */
+
+.m1-section:has(.m1-card) {
+    background: linear-gradient(135deg, #eaf6f5, #f0f7f8);
+    min-height: 65vh;
+}
+
+.m1-card {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #e0ece8;
+    box-shadow: 0 5px 18px rgba(20,45,78,0.08);
+    transition: 0.3s;
+}
+
+.m1-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 28px rgba(20,45,78,0.14);
+}
+
+.m1-card h3 {
+    color: #142d4e;
+    font-size: 21px;
+    margin-bottom: 15px;
+}
+
+.m1-card p {
+    color: #687587;
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+.m1-card a {
+    color: #ad8128;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.m1-card .m1-btn {
+    display: inline-block;
+    background: #142d4e;
+    color: #ffffff;
+    padding: 11px 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.m1-card .m1-btn:hover {
+    background: #d5aa45;
+    color: #142d4e;
+}
+
+
+/* =========================================
+   ACHIEVEMENTS PAGE
+========================================= */
+
+.m1-section:has(.m1-card) {
+    min-height: 65vh;
+}
+
+.m1-card small {
+    display: block;
+    color: #142d4e;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.m1-empty {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 30px;
+    color: #718096;
+}
+
+
+/* =========================================
+   DISCOVER MORE - ABOUT PAGE
+========================================= */
+
+.m1-details-card {
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 35px;
+    background: #ffffff;
+    border-radius: 12px;
+    border: 1px solid #e0ece8;
+    box-shadow: 0 5px 20px rgba(20,45,78,0.08);
+}
+
+.m1-details-card h1 {
+    color: #142d4e;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.m1-details-card h2 {
+    color: #142d4e;
+    font-size: 23px;
+    margin: 25px 0 12px;
+}
+
+.m1-details-card p {
+    color: #687587;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.m1-list {
+    padding-left: 25px;
+    color: #687587;
+    line-height: 2;
+}
+
+.m1-list li::marker {
+    color: #d5aa45;
 }
 
 
@@ -423,6 +569,10 @@
         font-size: 27px;
     }
 
+    .m1-title {
+        font-size: 27px;
+    }
+
     .m1-about-section {
         padding: 30px 6%;
     }
@@ -433,5 +583,13 @@
 
     .m1-about-image img {
         height: 240px;
+    }
+
+    .m1-details-card {
+        padding: 22px;
+    }
+
+    .m1-card {
+        padding: 20px;
     }
 }
