@@ -1,3 +1,4 @@
+
 <?php
 require_once __DIR__ . '/../config/db.php';
 require_once __DIR__ . '/functions.php';
@@ -18,8 +19,10 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST["delete_application"])
 
     mysqli_stmt_bind_param($check, "i", $applicationId);
     mysqli_stmt_execute($check);
+
     $checkResult = mysqli_stmt_get_result($check);
     $checkData = mysqli_fetch_assoc($checkResult);
+
     mysqli_stmt_close($check);
 
     if ($checkData["total"] > 0) {
@@ -36,10 +39,14 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST["delete_application"])
 
         mysqli_stmt_bind_param($delete, "i", $applicationId);
 
-        if (mysqli_stmt_execute($delete) && mysqli_stmt_affected_rows($delete) > 0) {
+        if (mysqli_stmt_execute($delete) &&
+            mysqli_stmt_affected_rows($delete) > 0) {
+
             $message = "Application deleted successfully.";
             $messageType = "success";
+
         } else {
+
             $message = "Unable to delete this application.";
             $messageType = "error";
         }
@@ -48,15 +55,22 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST["delete_application"])
     }
 }
 
-$sql = "SELECT a.application_id, a.application_date, a.status,
-               u.name AS student_name,
-               i.title AS internship_title,
-               c.company_name
+$sql = "SELECT
+            a.application_id,
+            a.application_date,
+            a.status,
+            u.name AS student_name,
+            i.title AS internship_title,
+            c.company_name
         FROM applications a
-        INNER JOIN student_profiles s ON a.student_id = s.student_id
-        INNER JOIN Users u ON s.user_id = u.user_id
-        INNER JOIN internships i ON a.internship_id = i.internship_id
-        INNER JOIN companies c ON i.company_id = c.company_id
+        INNER JOIN student_profiles s
+            ON a.student_id = s.student_id
+        INNER JOIN Users u
+            ON s.user_id = u.user_id
+        INNER JOIN internships i
+            ON a.internship_id = i.internship_id
+        INNER JOIN companies c
+            ON i.company_id = c.company_id
         ORDER BY a.application_id DESC";
 
 $result = mysqli_query($conn, $sql);
@@ -67,17 +81,21 @@ include __DIR__ . '/../includes/header.php';
 ?>
 
 <section class="m6-section">
+
     <div class="m6-container">
 
         <h1>Student Applications</h1>
 
         <?php if ($message !== ""): ?>
-            <div class="m6-message <?php echo $messageType; ?>">
+
+            <div class="m6-message <?php echo m6_escape($messageType); ?>">
                 <?php echo m6_escape($message); ?>
             </div>
+
         <?php endif; ?>
 
         <div class="m6-table-wrapper">
+
             <table class="m6-table">
 
                 <thead>
@@ -98,10 +116,22 @@ include __DIR__ . '/../includes/header.php';
                         <?php while ($application = mysqli_fetch_assoc($result)): ?>
 
                             <tr>
-                                <td><?php echo m6_escape($application['student_name']); ?></td>
-                                <td><?php echo m6_escape($application['internship_title']); ?></td>
-                                <td><?php echo m6_escape($application['company_name']); ?></td>
-                                <td><?php echo m6_escape($application['application_date']); ?></td>
+
+                                <td>
+                                    <?php echo m6_escape($application['student_name']); ?>
+                                </td>
+
+                                <td>
+                                    <?php echo m6_escape($application['internship_title']); ?>
+                                </td>
+
+                                <td>
+                                    <?php echo m6_escape($application['company_name']); ?>
+                                </td>
+
+                                <td>
+                                    <?php echo m6_escape($application['application_date']); ?>
+                                </td>
 
                                 <td>
                                     <span class="m6-status">
@@ -110,31 +140,42 @@ include __DIR__ . '/../includes/header.php';
                                 </td>
 
                                 <td>
+
                                     <div class="m6-action-buttons">
 
-                                        <a class="m6-view-button"
-                                           href="application-details.php?id=<?php echo (int)$application['application_id']; ?>">
+                                        <a
+                                            class="m6-view-button"
+                                            href="application-details.php?id=<?php echo (int)$application['application_id']; ?>"
+                                        >
                                             View
                                         </a>
 
-                                        <form method="POST"
-                                              class="m6-confirm"
-                                              data-confirm-message="Are you sure you want to delete this application?">
+                                        <form
+                                            method="POST"
+                                            class="m6-confirm"
+                                            data-confirm-message="Are you sure you want to delete this application?"
+                                        >
 
-                                            <input type="hidden"
-                                                   name="application_id"
-                                                   value="<?php echo (int)$application['application_id']; ?>">
+                                            <input
+                                                type="hidden"
+                                                name="application_id"
+                                                value="<?php echo (int)$application['application_id']; ?>"
+                                            >
 
-                                            <button type="submit"
-                                                    name="delete_application"
-                                                    class="m6-delete-button">
+                                            <button
+                                                type="submit"
+                                                name="delete_application"
+                                                class="m6-delete-button"
+                                            >
                                                 Delete
                                             </button>
 
                                         </form>
 
                                     </div>
+
                                 </td>
+
                             </tr>
 
                         <?php endwhile; ?>
@@ -142,16 +183,21 @@ include __DIR__ . '/../includes/header.php';
                     <?php else: ?>
 
                         <tr>
-                            <td colspan="6">No applications submitted yet.</td>
+                            <td colspan="6">
+                                No applications submitted yet.
+                            </td>
                         </tr>
 
                     <?php endif; ?>
 
                 </tbody>
+
             </table>
+
         </div>
 
     </div>
+
 </section>
 
 <?php include __DIR__ . '/../includes/footer.php'; ?>
