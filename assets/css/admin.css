@@ -1,0 +1,608 @@
+
+/* ==========================================
+   CAREERCONNECT - ADMIN CSS
+   Professional Navy + Gold Theme
+========================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'DM Sans', Arial, sans-serif;
+    background: #e9edf2;
+    color: #263d59;
+}
+
+.m6-container {
+    width: 90%;
+    max-width: 1150px;
+    margin: auto;
+}
+
+/* ==========================================
+   HERO SECTION
+========================================== */
+
+.m6-hero {
+    min-height: 390px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+    background: linear-gradient(120deg, #071b3b, #263d59);
+    padding: 65px 20px;
+}
+
+.m6-tag {
+    color: #e6bd63;
+    font-size: 13px;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+.m6-hero h1 {
+    font-size: 42px;
+    margin: 20px 0;
+    color: #ffffff;
+}
+
+.m6-hero p {
+    max-width: 700px;
+    margin: 0 auto 30px;
+    color: #dce5ef;
+    line-height: 1.8;
+}
+
+.m6-btn {
+    display: inline-block;
+    background: #d8ad50;
+    color: #102d52;
+    padding: 12px 25px;
+    border: 1px solid #d8ad50;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.m6-btn:hover {
+    background: #ffffff;
+    border-color: #ffffff;
+    color: #102d52;
+    transform: translateY(-2px);
+}
+
+/* ==========================================
+   COMMON SECTION
+========================================== */
+
+.m6-section {
+    min-height: 450px;
+    padding: 45px 0;
+    background: #e9edf2;
+}
+
+.m6-section h1,
+.m6-section h2 {
+    color: #102d52;
+    margin-bottom: 20px;
+}
+
+/* ==========================================
+   CARDS
+========================================== */
+
+.m6-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+    margin-top: 30px;
+}
+
+.m6-card {
+    background: #ffffff;
+    padding: 27px;
+    border-radius: 13px;
+    border: 1px solid #dce3eb;
+    border-left: 5px solid #d8ad50;
+    box-shadow: 0 5px 18px rgba(15, 40, 70, 0.07);
+    transition: 0.3s ease;
+}
+
+.m6-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 22px rgba(15, 40, 70, 0.12);
+}
+
+.m6-card h3 {
+    color: #153b69;
+    margin-bottom: 12px;
+}
+
+.m6-card p {
+    color: #66758a;
+    line-height: 1.7;
+}
+
+/* ==========================================
+   LOGIN FORM
+========================================== */
+
+.m6-form {
+    max-width: 450px;
+    background: #ffffff;
+    margin: 30px auto;
+    padding: 35px;
+    border-radius: 14px;
+    border-top: 5px solid #d8ad50;
+    box-shadow: 0 8px 25px rgba(15, 40, 70, 0.10);
+}
+
+.m6-form h2 {
+    text-align: center;
+    color: #102d52;
+}
+
+.m6-form p {
+    text-align: center;
+    color: #66758a;
+    margin-bottom: 25px;
+}
+
+.m6-form label {
+    display: block;
+    margin: 15px 0 7px;
+    color: #34445a;
+    font-weight: 600;
+}
+
+.m6-form input {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #d8e0ea;
+    border-radius: 7px;
+    font-family: inherit;
+    font-size: 14px;
+    background: #ffffff;
+}
+
+.m6-form input:focus {
+    outline: none;
+    border-color: #d8ad50;
+    box-shadow: 0 0 0 3px rgba(216, 173, 80, 0.15);
+}
+
+.m6-form button {
+    width: 100%;
+    margin-top: 22px;
+}
+
+.m6-error {
+    padding: 12px;
+    background: #ffe5e5;
+    color: #9c2929;
+    border-radius: 7px;
+    margin-bottom: 15px;
+}
+
+/* ==========================================
+   ADMIN DASHBOARD
+========================================== */
+
+body:has(.m6-stats) {
+    background: #e9edf2;
+}
+
+.m6-section:has(.m6-stats) {
+    background: #e9edf2;
+    padding: 38px 0;
+}
+
+.m6-section:has(.m6-stats) .m6-container {
+    background: #263d59;
+    padding: 35px;
+    border-radius: 17px;
+    border: 1px solid #435c78;
+    box-shadow: 0 10px 30px rgba(7, 27, 59, 0.16);
+}
+
+/* Dashboard Heading */
+
+.m6-dashboard-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 28px;
+    padding-bottom: 22px;
+    border-bottom: 1px solid #50647d;
+}
+
+.m6-dashboard-heading h1 {
+    color: #ffffff !important;
+    font-size: 29px;
+    font-weight: 700;
+    margin: 0 0 8px;
+}
+
+.m6-dashboard-heading p {
+    color: #d0d9e5 !important;
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Logout Button */
+
+.m6-logout-btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background: #102d52;
+    color: #ffffff;
+    padding: 11px 22px;
+    border: 1px solid #d8ad50;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+    transition: 0.3s ease;
+    white-space: nowrap;
+}
+
+.m6-logout-btn:hover {
+    background: #d8ad50;
+    color: #102d52;
+}
+
+/* ==========================================
+   STATISTICS CARDS
+========================================== */
+
+.m6-stats {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.m6-stat-card {
+    background: #edf2f7;
+    padding: 25px;
+    min-height: 135px;
+    border-radius: 12px;
+    border: 1px solid #d5dfeb;
+    border-left: 5px solid #d8ad50;
+    box-shadow: 0 5px 16px rgba(0, 0, 0, 0.10);
+    transition: 0.3s ease;
+}
+
+.m6-stat-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.15);
+}
+
+.m6-stat-card h3 {
+    font-size: 14px;
+    color: #52647a;
+    font-weight: 600;
+    margin: 0;
+}
+
+.m6-stat-card strong {
+    display: block;
+    font-size: 33px;
+    color: #102d52;
+    margin-top: 14px;
+    font-weight: 700;
+}
+
+/* ==========================================
+   ADMIN MANAGEMENT BUTTONS
+========================================== */
+
+.m6-admin-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 13px;
+    margin-top: 30px;
+    padding-top: 23px;
+    border-top: 1px solid #50647d;
+}
+
+.m6-admin-links a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background: #d8ad50;
+    color: #102d52;
+    text-decoration: none;
+    padding: 12px 21px;
+    border-radius: 8px;
+    border: 1px solid #d8ad50;
+    font-size: 14px;
+    font-weight: 700;
+    transition: 0.3s ease;
+}
+
+.m6-admin-links a:hover {
+    background: #ffffff;
+    color: #102d52;
+    border-color: #ffffff;
+    transform: translateY(-2px);
+}
+
+/* ==========================================
+   TABLES
+========================================== */
+
+.m6-table-wrapper {
+    overflow-x: auto;
+    background: #ffffff;
+    border: 1px solid #dce3eb;
+    border-radius: 12px;
+    box-shadow: 0 5px 18px rgba(15, 40, 70, 0.07);
+}
+
+.m6-table {
+    width: 100%;
+    min-width: 650px;
+    border-collapse: collapse;
+}
+
+.m6-table th {
+    background: #102d52;
+    color: #ffffff;
+    padding: 16px;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.m6-table td {
+    padding: 15px 16px;
+    color: #43536a;
+    border-bottom: 1px solid #e4eaf1;
+    font-size: 14px;
+}
+
+.m6-table tr:last-child td {
+    border-bottom: none;
+}
+
+.m6-table tbody tr:hover {
+    background: #f3f6fa;
+}
+
+/* ==========================================
+   STATUS
+========================================== */
+
+.m6-status {
+    display: inline-block;
+    background: #fff2d4;
+    color: #805b13;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+/* ==========================================
+   VIEW AND DELETE BUTTONS
+========================================== */
+
+.m6-action-buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: nowrap;
+}
+
+.m6-view-button,
+.m6-delete-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 85px;
+    min-height: 36px;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 7px;
+    font-size: 13px;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.m6-view-button {
+    background: #102d52;
+    color: #ffffff !important;
+}
+
+.m6-view-button:hover {
+    background: #31577e;
+}
+
+.m6-delete-button {
+    background: #dc3545;
+    color: #ffffff !important;
+}
+
+.m6-delete-button:hover {
+    background: #b02a37;
+}
+
+.m6-confirm {
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+}
+
+/* ==========================================
+   LINKS
+========================================== */
+
+.m6-small-link,
+.m6-back-link {
+    color: #174b83;
+    font-weight: 700;
+    text-decoration: none;
+    transition: 0.2s ease;
+}
+
+.m6-small-link:hover,
+.m6-back-link:hover {
+    color: #c08d28;
+}
+
+.m6-back-link {
+    display: inline-block;
+    margin-top: 20px;
+}
+
+/* ==========================================
+   DETAILS CARD
+========================================== */
+
+.m6-details-card,
+.m6-message {
+    max-width: 750px;
+    background: #ffffff;
+    padding: 30px;
+    margin: 20px auto;
+    border-radius: 13px;
+    border: 1px solid #dce3eb;
+    border-top: 5px solid #d8ad50;
+    box-shadow: 0 5px 20px rgba(15, 40, 70, 0.08);
+    line-height: 1.9;
+}
+
+.m6-details-card h2 {
+    color: #102d52;
+    margin-bottom: 20px;
+}
+
+.m6-details-card p {
+    color: #526176;
+    margin: 12px 0;
+    overflow-wrap: anywhere;
+}
+
+.m6-details-card form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 25px 0;
+}
+
+/* Reject Button */
+
+.m6-reject-btn {
+    background: #b83c3c;
+    color: #ffffff;
+    padding: 12px 22px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    font-weight: 700;
+    transition: 0.3s ease;
+}
+
+.m6-reject-btn:hover {
+    background: #922c2c;
+}
+
+/* ==========================================
+   MESSAGES
+========================================== */
+
+.m6-message {
+    text-align: center;
+}
+
+.m6-message.success {
+    background: #d1e7dd;
+    color: #0f5132;
+    border-top-color: #198754;
+}
+
+.m6-message.error {
+    background: #f8d7da;
+    color: #842029;
+    border-top-color: #dc3545;
+}
+
+/* ==========================================
+   RESPONSIVE DESIGN
+========================================== */
+
+@media (max-width: 900px) {
+
+    .m6-stats {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .m6-hero h1 {
+        font-size: 30px;
+    }
+
+    .m6-grid,
+    .m6-stats {
+        grid-template-columns: 1fr;
+    }
+
+    .m6-dashboard-heading {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .m6-section {
+        padding: 30px 0;
+    }
+
+    .m6-section:has(.m6-stats) .m6-container {
+        padding: 23px 17px;
+    }
+
+    .m6-admin-links {
+        flex-direction: column;
+    }
+
+    .m6-admin-links a {
+        width: 100%;
+        text-align: center;
+    }
+
+    .m6-details-card {
+        padding: 20px;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .m6-action-buttons {
+        flex-wrap: wrap;
+    }
+
+    .m6-form {
+        padding: 24px;
+    }
+
+    .m6-dashboard-heading h1 {
+        font-size: 25px;
+    }
+
+    .m6-stat-card strong {
+        font-size: 29px;
+    }
+
+}

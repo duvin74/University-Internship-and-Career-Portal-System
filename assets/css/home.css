@@ -1,0 +1,587 @@
+
+
+
+.m1-hero {
+    min-height: 590px;
+    padding: 75px 7%;
+    background: linear-gradient(120deg, #102744, #1d426b);
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    align-items: center;
+    gap: 45px;
+    overflow: hidden;
+}
+
+.m1-hero-content {
+    color: white;
+}
+
+.m1-tag,
+.m1-small-title {
+    color: #d5aa45;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.m1-hero h1 {
+    font-size: clamp(38px, 5vw, 62px);
+    line-height: 1.15;
+    margin: 20px 0;
+}
+
+.m1-hero h1 span {
+    color: #e5bd63;
+}
+
+.m1-hero-content > p {
+    color: #e1e8f0;
+    font-size: 16px;
+    max-width: 550px;
+    margin-bottom: 30px;
+}
+
+.m1-hero-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.m1-btn {
+    display: inline-block;
+    text-decoration: none;
+    padding: 13px 25px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.m1-btn-gold {
+    background: #d5aa45;
+    color: #142d4e;
+}
+
+.m1-btn-gold:hover {
+    background: #ffffff;
+    transform: translateY(-3px);
+}
+
+.m1-btn-outline {
+    color: white;
+    border: 1px solid white;
+}
+
+.m1-btn-outline:hover {
+    background: white;
+    color: #142d4e;
+}
+
+.m1-btn-dark {
+    background: #142d4e;
+    color: white;
+}
+
+.m1-btn-dark:hover {
+    background: #d5aa45;
+    color: #142d4e;
+}
+
+.m1-hero-image img {
+    width: 100%;
+    height: 390px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 20px 45px rgba(0,0,0,0.25);
+}
+
+.m1-hero-stats {
+    display: flex;
+    gap: 40px;
+    margin-top: 45px;
+    flex-wrap: wrap;
+}
+
+.m1-hero-stats h2 {
+    color: #e5bd63;
+    font-size: 21px;
+}
+
+.m1-hero-stats p {
+    color: #dce5ef;
+    font-size: 13px;
+}
+
+
+/* =========================================
+   INTRO SECTION
+========================================= */
+
+.m1-intro-section {
+    text-align: center;
+    padding: 35px 20px;
+    background: linear-gradient(135deg, #e8f7f3, #eaf2fa);
+}
+
+.m1-intro-section h2 {
+    color: #142d4e;
+    font-size: 34px;
+    margin: 12px 0;
+}
+
+.m1-intro-section p {
+    max-width: 700px;
+    margin: auto;
+    color: #657184;
+}
+
+
+/* =========================================
+   COMMON SECTIONS
+========================================= */
+
+.m1-section {
+    padding: 45px 7%;
+}
+
+.m1-heading {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.m1-heading > span {
+    color: #bd9230;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.m1-heading h2 {
+    color: #142d4e;
+    font-size: 34px;
+    margin: 10px 0;
+}
+
+.m1-heading p {
+    color: #718096;
+}
+
+
+/* =========================================
+   FEATURES SECTION
+========================================= */
+
+.m1-features {
+    background: linear-gradient(135deg, #e5f5ef, #edf7f8);
+}
+
+
+/* =========================================
+   GRID AND HOME PAGE CARDS
+========================================= */
+
+.m1-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.m1-feature-card,
+.m1-company-card,
+.m1-achievement-card {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 18px rgba(20,45,78,0.07);
+    border: 1px solid #e0ece8;
+    transition: 0.3s;
+}
+
+.m1-feature-card:hover,
+.m1-company-card:hover,
+.m1-achievement-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 28px rgba(20,45,78,0.12);
+}
+
+.m1-icon {
+    width: 48px;
+    height: 48px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    background: #e5f3e9;
+    color: #39866b;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.m1-feature-card h3,
+.m1-company-card h3,
+.m1-achievement-card h3 {
+    color: #142d4e;
+    margin-bottom: 12px;
+    font-size: 20px;
+}
+
+.m1-feature-card p,
+.m1-company-card p,
+.m1-achievement-card p {
+    color: #687587;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.m1-feature-card a,
+.m1-company-card a {
+    color: #ad8128;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+/* =========================================
+   HOME PAGE COMPANIES SECTION
+========================================= */
+
+.m1-company-section {
+    background: linear-gradient(135deg, #eaf6f5, #f0f7f8);
+}
+
+.m1-company-icon {
+    width: 55px;
+    height: 55px;
+    display: grid;
+    place-items: center;
+    border-radius: 10px;
+    background: #142d4e;
+    color: #e5bd63;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+
+/* =========================================
+   HOME PAGE ACHIEVEMENTS SECTION
+========================================= */
+
+.m1-achievement-section {
+    background: linear-gradient(135deg, #e7f4ed, #eef6f2);
+}
+
+.m1-achievement-label {
+    color: #b68b30;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.m1-achievement-card small {
+    color: #142d4e;
+    font-weight: bold;
+}
+
+.m1-empty {
+    grid-column: 1 / -1;
+    text-align: center;
+    color: #718096;
+    padding: 25px;
+}
+
+.m1-center {
+    text-align: center;
+    margin-top: 25px;
+}
+
+
+/* =========================================
+   ABOUT SECTION - HOME PAGE
+========================================= */
+
+.m1-about-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 50px;
+    padding: 35px 7%;
+    background: linear-gradient(135deg, #eaf3f8, #e8f5f0);
+}
+
+.m1-about-content > span {
+    color: #b68b30;
+    font-weight: bold;
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+
+.m1-about-content h2 {
+    color: #142d4e;
+    font-size: 36px;
+    margin: 15px 0;
+    line-height: 1.3;
+}
+
+.m1-about-content p {
+    color: #687587;
+    margin-bottom: 20px;
+}
+
+.m1-about-image img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+/* =========================================
+   FINAL CTA SECTION
+========================================= */
+
+.m1-cta {
+    text-align: center;
+    padding: 75px 20px;
+    background: #142d4e;
+    color: white;
+}
+
+.m1-cta > span {
+    color: #e5bd63;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.m1-cta h2 {
+    font-size: 34px;
+    margin: 15px 0;
+}
+
+.m1-cta p {
+    color: #dce5ef;
+    margin-bottom: 25px;
+}
+
+
+/* =========================================
+   INNER PAGES - COMMON TITLE
+========================================= */
+
+.m1-title {
+    color: #142d4e;
+    font-size: 34px;
+    text-align: center;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.m1-intro {
+    color: #687587;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.7;
+    max-width: 750px;
+    margin: 0 auto 30px;
+}
+
+
+/* =========================================
+   EXPLORE COMPANIES PAGE
+========================================= */
+
+.m1-section:has(.m1-card) {
+    background: linear-gradient(135deg, #eaf6f5, #f0f7f8);
+    min-height: 65vh;
+}
+
+.m1-card {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #e0ece8;
+    box-shadow: 0 5px 18px rgba(20,45,78,0.08);
+    transition: 0.3s;
+}
+
+.m1-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 28px rgba(20,45,78,0.14);
+}
+
+.m1-card h3 {
+    color: #142d4e;
+    font-size: 21px;
+    margin-bottom: 15px;
+}
+
+.m1-card p {
+    color: #687587;
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+.m1-card a {
+    color: #ad8128;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.m1-card .m1-btn {
+    display: inline-block;
+    background: #142d4e;
+    color: #ffffff;
+    padding: 11px 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.m1-card .m1-btn:hover {
+    background: #d5aa45;
+    color: #142d4e;
+}
+
+
+/* =========================================
+   ACHIEVEMENTS PAGE
+========================================= */
+
+.m1-section:has(.m1-card) {
+    min-height: 65vh;
+}
+
+.m1-card small {
+    display: block;
+    color: #142d4e;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.m1-empty {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 30px;
+    color: #718096;
+}
+
+
+/* =========================================
+   DISCOVER MORE - ABOUT PAGE
+========================================= */
+
+.m1-details-card {
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 35px;
+    background: #ffffff;
+    border-radius: 12px;
+    border: 1px solid #e0ece8;
+    box-shadow: 0 5px 20px rgba(20,45,78,0.08);
+}
+
+.m1-details-card h1 {
+    color: #142d4e;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.m1-details-card h2 {
+    color: #142d4e;
+    font-size: 23px;
+    margin: 25px 0 12px;
+}
+
+.m1-details-card p {
+    color: #687587;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.m1-list {
+    padding-left: 25px;
+    color: #687587;
+    line-height: 2;
+}
+
+.m1-list li::marker {
+    color: #d5aa45;
+}
+
+
+/* =========================================
+   RESPONSIVE DESIGN
+========================================= */
+
+@media (max-width: 900px) {
+
+    .m1-hero {
+        grid-template-columns: 1fr;
+        padding: 60px 6%;
+    }
+
+    .m1-hero-image img {
+        height: 320px;
+    }
+
+    .m1-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .m1-about-section {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .m1-hero {
+        padding: 45px 6%;
+    }
+
+    .m1-hero h1 {
+        font-size: 38px;
+    }
+
+    .m1-hero-stats {
+        gap: 20px;
+    }
+
+    .m1-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .m1-section {
+        padding: 30px 6%;
+    }
+
+    .m1-intro-section h2,
+    .m1-heading h2,
+    .m1-cta h2 {
+        font-size: 27px;
+    }
+
+    .m1-title {
+        font-size: 27px;
+    }
+
+    .m1-about-section {
+        padding: 30px 6%;
+    }
+
+    .m1-about-content h2 {
+        font-size: 29px;
+    }
+
+    .m1-about-image img {
+        height: 240px;
+    }
+
+    .m1-details-card {
+        padding: 22px;
+    }
+
+    .m1-card {
+        padding: 20px;
+    }
+}
