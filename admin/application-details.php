@@ -14,12 +14,12 @@ $applicationId = (int)($_GET['id'] ?? 0);
 $message = "";
 $messageType = "";
 
-// CSRF Token
+
 if (empty($_SESSION['application_csrf_token'])) {
     $_SESSION['application_csrf_token'] = bin2hex(random_bytes(32));
 }
 
-// Accept or Reject Application
+
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
     $action = $_POST['application_action'] ?? '';
@@ -42,7 +42,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
     } else {
 
-        // Only Pending applications can be updated
+        
         $update = mysqli_prepare(
             $conn,
             "UPDATE applications
@@ -81,7 +81,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     }
 }
 
-// Get Application Details
+
 $sql = "SELECT
             a.application_id,
             a.application_date,
