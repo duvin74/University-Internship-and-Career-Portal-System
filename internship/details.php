@@ -92,7 +92,7 @@ include __DIR__ . '/../includes/header.php';
 
             <div class="m4-detail-content">
 
-                <h2>Requirements</h2>
+                <h2>Internship Requirements</h2>
 
                 <p>
                     <?php
