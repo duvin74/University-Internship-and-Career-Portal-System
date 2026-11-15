@@ -38,7 +38,7 @@ include __DIR__ . '/../includes/header.php';
 
 <section class="m4-search-section">
 
-    <h2>Find Your Internship</h2>
+    <h2>Search Internships</h2>
 
     <p>Search by internship title, company or required skills.</p>
 
