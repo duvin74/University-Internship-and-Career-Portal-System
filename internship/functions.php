@@ -5,7 +5,7 @@ function m4_escape($value) {
     return htmlspecialchars((string)$value, ENT_QUOTES, 'UTF-8');
 }
 
-// Get all available internships
+// Get all verified internships
 function m4_getInternships($conn, $keyword = '') {
 
     $sql = "SELECT i.internship_id,
