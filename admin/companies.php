@@ -8,14 +8,12 @@ m6_requireAdmin();
 $message = "";
 $messageType = "";
 
-// DELETE COMPANY
 if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST["delete_company"])) {
 
     $company_id = (int)($_POST["company_id"] ?? 0);
 
     if ($company_id > 0) {
 
-        // Check related internships
         $checkInternships = mysqli_prepare(
             $conn,
             "SELECT internship_id FROM internships WHERE company_id = ? LIMIT 1"
@@ -25,7 +23,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST["delete_company"])) {
         mysqli_stmt_execute($checkInternships);
         $internshipResult = mysqli_stmt_get_result($checkInternships);
 
-        // Check related achievements
         $checkAchievements = mysqli_prepare(
             $conn,
             "SELECT achievement_id FROM company_achievements WHERE company_id = ? LIMIT 1"
@@ -49,7 +46,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST["delete_company"])) {
 
             try {
 
-                // Get company user ID
                 $getUser = mysqli_prepare(
                     $conn,
                     "SELECT user_id FROM companies WHERE company_id = ?"
@@ -67,7 +63,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST["delete_company"])) {
 
                 $user_id = (int)$companyData["user_id"];
 
-                // Update experiences
                 $updateExperiences = mysqli_prepare(
                     $conn,
                     "UPDATE experiences SET company_id = NULL WHERE company_id = ?"
@@ -76,7 +71,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST["delete_company"])) {
                 mysqli_stmt_bind_param($updateExperiences, "i", $company_id);
                 mysqli_stmt_execute($updateExperiences);
 
-                // Delete company
                 $deleteCompany = mysqli_prepare(
                     $conn,
                     "DELETE FROM companies WHERE company_id = ?"
@@ -89,7 +83,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST["delete_company"])) {
                     throw new Exception("Company could not be deleted.");
                 }
 
-                // Delete company user account
                 $deleteUser = mysqli_prepare(
                     $conn,
                     "DELETE FROM Users WHERE user_id = ?"
@@ -119,7 +112,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST["delete_company"])) {
     }
 }
 
-// FETCH COMPANIES
 $sql = "SELECT c.company_id, c.company_name, c.website,
                c.verification_status, u.name, u.email
         FROM companies c
