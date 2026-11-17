@@ -17,12 +17,19 @@ $page_css = "/University-Internship-and-Career-Portal-System/assets/css/student.
 $photo = '';
 
 if (!empty($profile['profile_photo'])) {
-    $photo = 'uploads/' . rawurlencode(
-        basename($profile['profile_photo'])
-    );
+    $photo_filename = basename($profile['profile_photo']);
+
+    if ($photo_filename !== '.' && $photo_filename !== '') {
+        $photo = 'uploads/' . rawurlencode($photo_filename);
+    }
 }
 
-$name = $profile['name'] ?? 'Student';
+$name = trim($profile['name'] ?? '');
+
+if ($name === '') {
+    $name = 'Student';
+}
+
 $has_cv = !empty($profile['cv_path']);
 
 include __DIR__ . '/../includes/header.php';
